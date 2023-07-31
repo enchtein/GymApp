@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8ABC096C2A786C6300BB266A /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABC096B2A786C6300BB266A /* UIApplication+Extension.swift */; };
 		8ADC0C1F2A74957F0072BE94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC0C1E2A74957F0072BE94 /* AppDelegate.swift */; };
 		8ADC0C232A74957F0072BE94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC0C222A74957F0072BE94 /* ViewController.swift */; };
 		8ADC0C262A74957F0072BE94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC0C242A74957F0072BE94 /* Main.storyboard */; };
@@ -14,9 +15,14 @@
 		8ADC0C2B2A7495810072BE94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC0C2A2A7495810072BE94 /* Assets.xcassets */; };
 		8ADC0C2E2A7495810072BE94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC0C2C2A7495810072BE94 /* LaunchScreen.storyboard */; };
 		8ADC0C422A7498980072BE94 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC0C412A7498980072BE94 /* AppCoordinator.swift */; };
+		8AEB64E42A772C6700651389 /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AEB64E32A772C6700651389 /* TabBarViewController.storyboard */; };
+		8AEB64E62A772C7300651389 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB64E52A772C7300651389 /* TabBarViewController.swift */; };
+		8AEB64E82A772D0C00651389 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB64E72A772D0C00651389 /* AppViewController.swift */; };
+		8AEB64EA2A772E1F00651389 /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB64E92A772E1F00651389 /* StoryboardInitializable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8ABC096B2A786C6300BB266A /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		8ADC0C1B2A74957F0072BE94 /* GymApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADC0C1E2A74957F0072BE94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ADC0C222A74957F0072BE94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +32,10 @@
 		8ADC0C2D2A7495810072BE94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ADC0C2F2A7495810072BE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ADC0C412A7498980072BE94 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8AEB64E32A772C6700651389 /* TabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarViewController.storyboard; sourceTree = "<group>"; };
+		8AEB64E52A772C7300651389 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		8AEB64E72A772D0C00651389 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		8AEB64E92A772E1F00651389 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				8ADC0C402A74987C0072BE94 /* AppRouting */,
+				8AEB64E22A772B6200651389 /* SettingsVC */,
 				8ADC0C3C2A7496AB0072BE94 /* TrainingProgressVC */,
 				8ADC0C3B2A7496960072BE94 /* TrainingHistoryVC */,
 				8ADC0C3A2A74968A0072BE94 /* CurrentTrainingVC */,
@@ -105,6 +116,8 @@
 		8ADC0C382A74965D0072BE94 /* GymTabBarVC */ = {
 			isa = PBXGroup;
 			children = (
+				8AEB64E32A772C6700651389 /* TabBarViewController.storyboard */,
+				8AEB64E52A772C7300651389 /* TabBarViewController.swift */,
 			);
 			path = GymTabBarVC;
 			sourceTree = "<group>";
@@ -147,6 +160,7 @@
 		8ADC0C3E2A7497090072BE94 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8ABC096B2A786C6300BB266A /* UIApplication+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -162,8 +176,17 @@
 			isa = PBXGroup;
 			children = (
 				8ADC0C412A7498980072BE94 /* AppCoordinator.swift */,
+				8AEB64E72A772D0C00651389 /* AppViewController.swift */,
+				8AEB64E92A772E1F00651389 /* StoryboardInitializable.swift */,
 			);
 			path = AppRouting;
+			sourceTree = "<group>";
+		};
+		8AEB64E22A772B6200651389 /* SettingsVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingsVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ADC0C2E2A7495810072BE94 /* LaunchScreen.storyboard in Resources */,
+				8AEB64E42A772C6700651389 /* TabBarViewController.storyboard in Resources */,
 				8ADC0C2B2A7495810072BE94 /* Assets.xcassets in Resources */,
 				8ADC0C262A74957F0072BE94 /* Main.storyboard in Resources */,
 			);
@@ -237,9 +261,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AEB64EA2A772E1F00651389 /* StoryboardInitializable.swift in Sources */,
+				8AEB64E82A772D0C00651389 /* AppViewController.swift in Sources */,
+				8ABC096C2A786C6300BB266A /* UIApplication+Extension.swift in Sources */,
 				8ADC0C232A74957F0072BE94 /* ViewController.swift in Sources */,
 				8ADC0C292A74957F0072BE94 /* GymApp.xcdatamodeld in Sources */,
 				8ADC0C422A7498980072BE94 /* AppCoordinator.swift in Sources */,
+				8AEB64E62A772C7300651389 /* TabBarViewController.swift in Sources */,
 				8ADC0C1F2A74957F0072BE94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -370,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -395,7 +423,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,7 +452,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

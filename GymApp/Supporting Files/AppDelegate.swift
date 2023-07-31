@@ -15,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    guard let window = window else {
+      assertionFailure("Please, choose launch storyboard")
+      return false
+    }
+    setAppApperance()
+    AppCoordinator.shared.start(with: window)
+    
     return true
   }
 
@@ -63,5 +70,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       }
   }
 
+  
+  private func setAppApperance() {
+    let largeTitleSize = UIDevice.current.userInterfaceIdiom == .pad ? 30 : 26
+    UITableView.appearance().tableFooterView = UIView()
+    if #available(iOS 15.0, *) {
+      let appearance = UINavigationBarAppearance()
+      appearance.configureWithOpaqueBackground()
+      appearance.backgroundColor = .red//AppColor.main
+      appearance.titleTextAttributes = [.font: UIFont.systemFont(ofSize: 18.0), .foregroundColor: UIColor.white]
+//      appearance.titleTextAttributes = [.font: AppFont.font(type: .mainMedium ,size: 18), .foregroundColor: UIColor.white]
+      appearance.largeTitleTextAttributes = [.font: UIFont.systemFont(ofSize: CGFloat(largeTitleSize), weight: .bold), .foregroundColor : UIColor.white]
+//      appearance.largeTitleTextAttributes = [.font: AppFont.font(type: .mainBold, size: largeTitleSize), .foregroundColor : UIColor.white]
+      UINavigationBar.appearance().standardAppearance = appearance
+      UINavigationBar.appearance().scrollEdgeAppearance = UINavigationBar.appearance().standardAppearance
+      UIView.appearance(whenContainedInInstancesOf: [UITableView.self])
+      UITableView.appearance().sectionHeaderTopPadding = .zero
+    } else {
+      UINavigationBar.appearance().titleTextAttributes = [.font: UIFont.systemFont(ofSize: 18.0), .foregroundColor: UIColor.white]
+//      UINavigationBar.appearance().titleTextAttributes = [.font: AppFont.font(type: .mainMedium ,size: 18), .foregroundColor: UIColor.white]
+      UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont.systemFont(ofSize: CGFloat(largeTitleSize), weight: .bold), .foregroundColor : UIColor.white]
+//      UINavigationBar.appearance().largeTitleTextAttributes = [.font: AppFont.font(type: .mainBold, size: largeTitleSize), .foregroundColor : UIColor.white]
+      UINavigationBar.appearance().barTintColor = .red//AppColor.main
+      UINavigationBar.appearance().isTranslucent = false
+      UINavigationBar.appearance().backgroundColor = .red//AppColor.main
+    }
+    UINavigationBar.appearance().tintColor = .white
+    UINavigationBar.appearance().barTintColor = .red//AppColor.main
+    UITabBar.appearance().tintColor = .systemBlue//AppColor.mainButtonColor
+    UITabBar.appearance().backgroundColor = .green//AppColor.mainBackgroundColor
+    UITabBar.appearance().barTintColor = .green//AppColor.mainBackgroundColor
+    UITabBar.appearance().isTranslucent = false
+    UIStackView.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).spacing = -7
+  }
 }
 
