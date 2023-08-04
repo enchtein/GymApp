@@ -8,6 +8,7 @@
 import Foundation
 
 enum AppViewController {
+  case rootWithLeftSideMenu
   case tabBar
   case trainingPlanner
   case trainingProgress

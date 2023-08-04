@@ -10,6 +10,7 @@ import UIKit
 class AppCoordinator: NSObject {
   static let shared = AppCoordinator()
   private(set) var currentNavigator: UINavigationController?
+  private(set) var sideMenu: SideMenuMainViewController?
   
   override init() {
     super.init()
@@ -23,17 +24,12 @@ class AppCoordinator: NSObject {
     currentNavigator?.navigationBar.tintColor = .white
     currentNavigator?.navigationBar.barTintColor = #colorLiteral(red: 0.1450980392, green: 0.1803921569, blue: 0.2509803922, alpha: 1)
     currentNavigator?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
-//    currentNavigator?.setNavigationBarHidden(true, animated: true)
+    currentNavigator?.setNavigationBarHidden(true, animated: true)
     window.rootViewController = currentNavigator
     
     window.makeKeyAndVisible()
-  }
-  
-  func activateRoot(fromLogin: Bool = false) {
-    guard let currentNavigator else { fatalError("currentNavigator - is not initilized") }
     
-    currentNavigator.popToRootViewController(animated: false)
-    currentNavigator.setNavigationBarHidden(true, animated: true)
+    activateRoot()
   }
   
   func push(_ controller: AppViewController, animated: Bool = true) {
@@ -48,6 +44,10 @@ class AppCoordinator: NSObject {
   
   private func instantiate(_ item: AppViewController) -> UIViewController {
     switch item {
+    case .rootWithLeftSideMenu:
+      let vc = SideMenuMainViewController.createFromStoryboard()
+      self.sideMenu = vc
+      return vc
     case .tabBar:
       let vc = TabBarViewController.createFromStoryboard()
       return vc
@@ -63,5 +63,12 @@ class AppCoordinator: NSObject {
 //    case .settings:
 //      <#code#>
     }
+  }
+  
+  func activateRoot() {
+    guard let currentNavigator else { fatalError("currentNavigator - is not initilized") }
+    currentNavigator.popToRootViewController(animated: false)
+    currentNavigator.setNavigationBarHidden(true, animated: true)
+    push(.rootWithLeftSideMenu)
   }
 }

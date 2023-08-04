@@ -35,6 +35,11 @@ extension StoryboardInitializable where Self : UIViewController {
   
 }
 
+extension StoryboardInitializable where Self : SideMenuMainViewController {
+  static var storyboardName: String {
+    return "SideMenu"
+  }
+}
 extension StoryboardInitializable where Self : TabBarViewController {
   static var storyboardName: String {
     return "TabBarViewController"

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="nfk-uM-svK">
+            <objects>
+                <navigationController storyboardIdentifier="SideMenuNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="olE-y4-xPo" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O24-aI-Vx5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="XQ8-n4-V1i" kind="relationship" relationship="rootViewController" id="18G-3z-dT3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fV-rr-aqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="-37"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="udg-dm-fh7">
+            <objects>
+                <viewController id="XQ8-n4-V1i" customClass="SideMenuViewController" customModule="GymApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AV2-RI-HLa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rcV-o1-1mz">
+                                <rect key="frame" x="0.0" y="56" width="393" height="786"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1F1-26-8d1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1F1-26-8d1" firstAttribute="trailing" secondItem="rcV-o1-1mz" secondAttribute="trailing" id="3e1-pJ-naE"/>
+                            <constraint firstItem="1F1-26-8d1" firstAttribute="bottom" secondItem="rcV-o1-1mz" secondAttribute="bottom" id="P9T-ee-1lW"/>
+                            <constraint firstItem="rcV-o1-1mz" firstAttribute="top" secondItem="1F1-26-8d1" secondAttribute="top" id="bjp-8O-DcC"/>
+                            <constraint firstItem="rcV-o1-1mz" firstAttribute="leading" secondItem="1F1-26-8d1" secondAttribute="leading" id="xHs-yM-mKy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7XA-8P-NEb"/>
+                    <connections>
+                        <outlet property="tableView" destination="rcV-o1-1mz" id="KW0-Fj-aYh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Snz-ju-3gU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1717" y="-22"/>
+        </scene>
+        <!--Side Menu Main View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuMainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SideMenuMainViewController" customModule="GymApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYM-kS-e07">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="fxT-NB-ecH">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="cex-Vq-oAh">
+                                            <connections>
+                                                <segue destination="olE-y4-xPo" kind="presentation" identifier="LeftMenuNavigationController" id="y0T-uV-Ali"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNp-1C-0XA">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JNp-1C-0XA" firstAttribute="top" secondItem="xYM-kS-e07" secondAttribute="bottom" id="3ss-xY-l89"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JNp-1C-0XA" secondAttribute="trailing" id="9xm-gT-SSs"/>
+                            <constraint firstItem="JNp-1C-0XA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="JJN-Kc-K7O"/>
+                            <constraint firstItem="xYM-kS-e07" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="V8T-CZ-WN2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xYM-kS-e07" secondAttribute="trailing" id="btE-vQ-P5H"/>
+                            <constraint firstAttribute="bottom" secondItem="JNp-1C-0XA" secondAttribute="bottom" id="mHs-k5-dtb"/>
+                            <constraint firstItem="xYM-kS-e07" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sre-47-qev"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leadingButton" destination="cex-Vq-oAh" id="vly-Tz-YdB"/>
+                        <outlet property="menuContainer" destination="JNp-1C-0XA" id="8lc-3p-xrG"/>
+                        <outlet property="navBar" destination="xYM-kS-e07" id="8ZW-tu-4Qa"/>
+                        <outlet property="navTitle" destination="fxT-NB-ecH" id="NX2-Qx-E1M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

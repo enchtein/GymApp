@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AAEFFB32A7887B90085190F /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 8AAEFFB22A7887B90085190F /* SideMenu */; };
+		8AAEFFB62A7887F30085190F /* SideMenuMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAEFFB52A7887F30085190F /* SideMenuMainViewController.swift */; };
+		8AAEFFB82A7888790085190F /* SideMenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAEFFB72A7888790085190F /* SideMenuItems.swift */; };
+		8AAEFFBA2A7889580085190F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAEFFB92A7889580085190F /* SideMenuViewController.swift */; };
+		8AAEFFBC2A788A740085190F /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAEFFBB2A788A730085190F /* SideMenu.storyboard */; };
 		8ABC096C2A786C6300BB266A /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABC096B2A786C6300BB266A /* UIApplication+Extension.swift */; };
 		8ADC0C1F2A74957F0072BE94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC0C1E2A74957F0072BE94 /* AppDelegate.swift */; };
 		8ADC0C232A74957F0072BE94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC0C222A74957F0072BE94 /* ViewController.swift */; };
@@ -22,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8AAEFFB52A7887F30085190F /* SideMenuMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuMainViewController.swift; sourceTree = "<group>"; };
+		8AAEFFB72A7888790085190F /* SideMenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuItems.swift; sourceTree = "<group>"; };
+		8AAEFFB92A7889580085190F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		8AAEFFBB2A788A730085190F /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
 		8ABC096B2A786C6300BB266A /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		8ADC0C1B2A74957F0072BE94 /* GymApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADC0C1E2A74957F0072BE94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,12 +52,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AAEFFB32A7887B90085190F /* SideMenu in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AAEFFB42A7887E50085190F /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8AAEFFB52A7887F30085190F /* SideMenuMainViewController.swift */,
+				8AAEFFB72A7888790085190F /* SideMenuItems.swift */,
+				8AAEFFB92A7889580085190F /* SideMenuViewController.swift */,
+				8AAEFFBB2A788A730085190F /* SideMenu.storyboard */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
 		8ADC0C122A74957F0072BE94 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +123,7 @@
 		8ADC0C372A7496500072BE94 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8AAEFFB42A7887E50085190F /* SideMenu */,
 				8ADC0C402A74987C0072BE94 /* AppRouting */,
 				8AEB64E22A772B6200651389 /* SettingsVC */,
 				8ADC0C3C2A7496AB0072BE94 /* TrainingProgressVC */,
@@ -205,6 +227,9 @@
 			dependencies = (
 			);
 			name = GymApp;
+			packageProductDependencies = (
+				8AAEFFB22A7887B90085190F /* SideMenu */,
+			);
 			productName = GymApp;
 			productReference = 8ADC0C1B2A74957F0072BE94 /* GymApp.app */;
 			productType = "com.apple.product-type.application";
@@ -233,6 +258,9 @@
 				Base,
 			);
 			mainGroup = 8ADC0C122A74957F0072BE94;
+			packageReferences = (
+				8AAEFFB12A7887B90085190F /* XCRemoteSwiftPackageReference "SideMenu" */,
+			);
 			productRefGroup = 8ADC0C1C2A74957F0072BE94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -248,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ADC0C2E2A7495810072BE94 /* LaunchScreen.storyboard in Resources */,
+				8AAEFFBC2A788A740085190F /* SideMenu.storyboard in Resources */,
 				8AEB64E42A772C6700651389 /* TabBarViewController.storyboard in Resources */,
 				8ADC0C2B2A7495810072BE94 /* Assets.xcassets in Resources */,
 				8ADC0C262A74957F0072BE94 /* Main.storyboard in Resources */,
@@ -261,10 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AAEFFB82A7888790085190F /* SideMenuItems.swift in Sources */,
 				8AEB64EA2A772E1F00651389 /* StoryboardInitializable.swift in Sources */,
 				8AEB64E82A772D0C00651389 /* AppViewController.swift in Sources */,
 				8ABC096C2A786C6300BB266A /* UIApplication+Extension.swift in Sources */,
+				8AAEFFBA2A7889580085190F /* SideMenuViewController.swift in Sources */,
 				8ADC0C232A74957F0072BE94 /* ViewController.swift in Sources */,
+				8AAEFFB62A7887F30085190F /* SideMenuMainViewController.swift in Sources */,
 				8ADC0C292A74957F0072BE94 /* GymApp.xcdatamodeld in Sources */,
 				8ADC0C422A7498980072BE94 /* AppCoordinator.swift in Sources */,
 				8AEB64E62A772C7300651389 /* TabBarViewController.swift in Sources */,
@@ -488,6 +520,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8AAEFFB12A7887B90085190F /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8AAEFFB22A7887B90085190F /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AAEFFB12A7887B90085190F /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8ADC0C272A74957F0072BE94 /* GymApp.xcdatamodeld */ = {
