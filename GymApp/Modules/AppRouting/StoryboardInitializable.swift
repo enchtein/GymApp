@@ -40,8 +40,23 @@ extension StoryboardInitializable where Self : SideMenuMainViewController {
     return "SideMenu"
   }
 }
-extension StoryboardInitializable where Self : TabBarViewController {
+extension StoryboardInitializable where Self : GymTabBarViewController {
   static var storyboardName: String {
-    return "TabBarViewController"
+    return "GymTabBar"
+  }
+}
+extension StoryboardInitializable where Self : CurrentTrainingViewController {
+  static var storyboardName: String {
+    return "CurrentTraining"
+  }
+}
+extension StoryboardInitializable where Self : TrainingPlannerViewController {
+  static var storyboardName: String {
+    return "TrainingPlanner"
+  }
+}
+extension StoryboardInitializable where Self : TrainingCounterViewController {
+  static var storyboardName: String {
+    return "TrainingCounter"
   }
 }

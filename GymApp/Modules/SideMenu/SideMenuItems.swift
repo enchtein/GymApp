@@ -25,7 +25,7 @@ enum SideMenuItems: CaseIterable {
   var viewController: UIViewController {
     switch self {
     case .tabBar:
-      return TabBarViewController.createFromStoryboard()
+      return GymTabBarViewController.createFromStoryboard()
     case .history:
       return UIViewController()
     case .settings:

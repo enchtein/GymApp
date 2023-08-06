@@ -17,8 +17,8 @@ class AppCoordinator: NSObject {
   }
   
   func start(with window: UIWindow) {
-    let gymTabBarVC = instantiate(.tabBar)
-    currentNavigator = UINavigationController(rootViewController: gymTabBarVC)
+    let emptyVC = UIViewController()
+    currentNavigator = UINavigationController(rootViewController: emptyVC)
     currentNavigator?.navigationBar.isTranslucent = false
     currentNavigator?.navigationBar.barStyle = .default
     currentNavigator?.navigationBar.tintColor = .white
@@ -47,9 +47,6 @@ class AppCoordinator: NSObject {
     case .rootWithLeftSideMenu:
       let vc = SideMenuMainViewController.createFromStoryboard()
       self.sideMenu = vc
-      return vc
-    case .tabBar:
-      let vc = TabBarViewController.createFromStoryboard()
       return vc
     default: return UIViewController()
 //    case .trainingPlanner:

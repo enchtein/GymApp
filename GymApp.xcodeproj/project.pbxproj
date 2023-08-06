@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A17D3732A7F0C340074DA90 /* CurrentTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17D3722A7F0C340074DA90 /* CurrentTrainingViewController.swift */; };
+		8A17D3752A7F0C9F0074DA90 /* TrainingPlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17D3742A7F0C9F0074DA90 /* TrainingPlannerViewController.swift */; };
+		8A17D3782A7F0D0F0074DA90 /* TrainingCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17D3772A7F0D0F0074DA90 /* TrainingCounterViewController.swift */; };
+		8A17D37A2A7F0D6E0074DA90 /* TrainingCounter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A17D3792A7F0D6E0074DA90 /* TrainingCounter.storyboard */; };
+		8A17D37C2A7F0D810074DA90 /* CurrentTraining.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A17D37B2A7F0D810074DA90 /* CurrentTraining.storyboard */; };
+		8A17D37E2A7F0D900074DA90 /* TrainingPlanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A17D37D2A7F0D900074DA90 /* TrainingPlanner.storyboard */; };
 		8AAEFFB32A7887B90085190F /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 8AAEFFB22A7887B90085190F /* SideMenu */; };
 		8AAEFFB62A7887F30085190F /* SideMenuMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAEFFB52A7887F30085190F /* SideMenuMainViewController.swift */; };
 		8AAEFFB82A7888790085190F /* SideMenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAEFFB72A7888790085190F /* SideMenuItems.swift */; };
@@ -20,13 +26,19 @@
 		8ADC0C2B2A7495810072BE94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC0C2A2A7495810072BE94 /* Assets.xcassets */; };
 		8ADC0C2E2A7495810072BE94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC0C2C2A7495810072BE94 /* LaunchScreen.storyboard */; };
 		8ADC0C422A7498980072BE94 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC0C412A7498980072BE94 /* AppCoordinator.swift */; };
-		8AEB64E42A772C6700651389 /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AEB64E32A772C6700651389 /* TabBarViewController.storyboard */; };
-		8AEB64E62A772C7300651389 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB64E52A772C7300651389 /* TabBarViewController.swift */; };
+		8AEB64E42A772C6700651389 /* GymTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AEB64E32A772C6700651389 /* GymTabBar.storyboard */; };
+		8AEB64E62A772C7300651389 /* GymTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB64E52A772C7300651389 /* GymTabBarViewController.swift */; };
 		8AEB64E82A772D0C00651389 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB64E72A772D0C00651389 /* AppViewController.swift */; };
 		8AEB64EA2A772E1F00651389 /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB64E92A772E1F00651389 /* StoryboardInitializable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A17D3722A7F0C340074DA90 /* CurrentTrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrentTrainingViewController.swift; path = GymApp/Modules/SideMenu/CurrentTrainingViewController.swift; sourceTree = SOURCE_ROOT; };
+		8A17D3742A7F0C9F0074DA90 /* TrainingPlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainingPlannerViewController.swift; path = GymApp/Modules/SideMenu/TrainingPlannerViewController.swift; sourceTree = SOURCE_ROOT; };
+		8A17D3772A7F0D0F0074DA90 /* TrainingCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCounterViewController.swift; sourceTree = "<group>"; };
+		8A17D3792A7F0D6E0074DA90 /* TrainingCounter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrainingCounter.storyboard; sourceTree = "<group>"; };
+		8A17D37B2A7F0D810074DA90 /* CurrentTraining.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CurrentTraining.storyboard; path = GymApp/Modules/TrainingCounterVC/CurrentTraining.storyboard; sourceTree = SOURCE_ROOT; };
+		8A17D37D2A7F0D900074DA90 /* TrainingPlanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = TrainingPlanner.storyboard; path = GymApp/Modules/TrainingCounterVC/TrainingPlanner.storyboard; sourceTree = SOURCE_ROOT; };
 		8AAEFFB52A7887F30085190F /* SideMenuMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuMainViewController.swift; sourceTree = "<group>"; };
 		8AAEFFB72A7888790085190F /* SideMenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuItems.swift; sourceTree = "<group>"; };
 		8AAEFFB92A7889580085190F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
@@ -41,8 +53,8 @@
 		8ADC0C2D2A7495810072BE94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ADC0C2F2A7495810072BE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ADC0C412A7498980072BE94 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		8AEB64E32A772C6700651389 /* TabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarViewController.storyboard; sourceTree = "<group>"; };
-		8AEB64E52A772C7300651389 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		8AEB64E32A772C6700651389 /* GymTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GymTabBar.storyboard; sourceTree = "<group>"; };
+		8AEB64E52A772C7300651389 /* GymTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymTabBarViewController.swift; sourceTree = "<group>"; };
 		8AEB64E72A772D0C00651389 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		8AEB64E92A772E1F00651389 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A17D3762A7F0CF30074DA90 /* TrainingCounterVC */ = {
+			isa = PBXGroup;
+			children = (
+				8A17D3772A7F0D0F0074DA90 /* TrainingCounterViewController.swift */,
+				8A17D3792A7F0D6E0074DA90 /* TrainingCounter.storyboard */,
+			);
+			path = TrainingCounterVC;
+			sourceTree = "<group>";
+		};
 		8AAEFFB42A7887E50085190F /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +149,7 @@
 				8AEB64E22A772B6200651389 /* SettingsVC */,
 				8ADC0C3C2A7496AB0072BE94 /* TrainingProgressVC */,
 				8ADC0C3B2A7496960072BE94 /* TrainingHistoryVC */,
+				8A17D3762A7F0CF30074DA90 /* TrainingCounterVC */,
 				8ADC0C3A2A74968A0072BE94 /* CurrentTrainingVC */,
 				8ADC0C392A74967A0072BE94 /* TrainingPlannerVC */,
 				8ADC0C382A74965D0072BE94 /* GymTabBarVC */,
@@ -138,8 +160,8 @@
 		8ADC0C382A74965D0072BE94 /* GymTabBarVC */ = {
 			isa = PBXGroup;
 			children = (
-				8AEB64E32A772C6700651389 /* TabBarViewController.storyboard */,
-				8AEB64E52A772C7300651389 /* TabBarViewController.swift */,
+				8AEB64E32A772C6700651389 /* GymTabBar.storyboard */,
+				8AEB64E52A772C7300651389 /* GymTabBarViewController.swift */,
 			);
 			path = GymTabBarVC;
 			sourceTree = "<group>";
@@ -147,6 +169,8 @@
 		8ADC0C392A74967A0072BE94 /* TrainingPlannerVC */ = {
 			isa = PBXGroup;
 			children = (
+				8A17D3742A7F0C9F0074DA90 /* TrainingPlannerViewController.swift */,
+				8A17D37D2A7F0D900074DA90 /* TrainingPlanner.storyboard */,
 			);
 			path = TrainingPlannerVC;
 			sourceTree = "<group>";
@@ -154,6 +178,8 @@
 		8ADC0C3A2A74968A0072BE94 /* CurrentTrainingVC */ = {
 			isa = PBXGroup;
 			children = (
+				8A17D3722A7F0C340074DA90 /* CurrentTrainingViewController.swift */,
+				8A17D37B2A7F0D810074DA90 /* CurrentTraining.storyboard */,
 			);
 			path = CurrentTrainingVC;
 			sourceTree = "<group>";
@@ -276,8 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ADC0C2E2A7495810072BE94 /* LaunchScreen.storyboard in Resources */,
+				8A17D37C2A7F0D810074DA90 /* CurrentTraining.storyboard in Resources */,
+				8A17D37E2A7F0D900074DA90 /* TrainingPlanner.storyboard in Resources */,
 				8AAEFFBC2A788A740085190F /* SideMenu.storyboard in Resources */,
-				8AEB64E42A772C6700651389 /* TabBarViewController.storyboard in Resources */,
+				8A17D37A2A7F0D6E0074DA90 /* TrainingCounter.storyboard in Resources */,
+				8AEB64E42A772C6700651389 /* GymTabBar.storyboard in Resources */,
 				8ADC0C2B2A7495810072BE94 /* Assets.xcassets in Resources */,
 				8ADC0C262A74957F0072BE94 /* Main.storyboard in Resources */,
 			);
@@ -290,16 +319,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A17D3732A7F0C340074DA90 /* CurrentTrainingViewController.swift in Sources */,
 				8AAEFFB82A7888790085190F /* SideMenuItems.swift in Sources */,
 				8AEB64EA2A772E1F00651389 /* StoryboardInitializable.swift in Sources */,
 				8AEB64E82A772D0C00651389 /* AppViewController.swift in Sources */,
 				8ABC096C2A786C6300BB266A /* UIApplication+Extension.swift in Sources */,
+				8A17D3782A7F0D0F0074DA90 /* TrainingCounterViewController.swift in Sources */,
 				8AAEFFBA2A7889580085190F /* SideMenuViewController.swift in Sources */,
 				8ADC0C232A74957F0072BE94 /* ViewController.swift in Sources */,
 				8AAEFFB62A7887F30085190F /* SideMenuMainViewController.swift in Sources */,
 				8ADC0C292A74957F0072BE94 /* GymApp.xcdatamodeld in Sources */,
 				8ADC0C422A7498980072BE94 /* AppCoordinator.swift in Sources */,
-				8AEB64E62A772C7300651389 /* TabBarViewController.swift in Sources */,
+				8A17D3752A7F0C9F0074DA90 /* TrainingPlannerViewController.swift in Sources */,
+				8AEB64E62A772C7300651389 /* GymTabBarViewController.swift in Sources */,
 				8ADC0C1F2A74957F0072BE94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

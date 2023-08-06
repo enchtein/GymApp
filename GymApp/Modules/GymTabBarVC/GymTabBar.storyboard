@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OFq-nb-NsE">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TrainingCounter-->
+        <scene sceneID="Amr-lU-nL1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TrainingCounter" id="gDW-Mw-vqR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="0hE-UJ-wzC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGP-X8-EJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475" y="-144"/>
+        </scene>
+        <!--CurrentTraining-->
+        <scene sceneID="BnW-X0-xbk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CurrentTraining" id="kUG-pm-S39" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="QPc-cm-66T"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPJ-3q-axx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-476" y="-220"/>
+        </scene>
+        <!--TrainingPlanner-->
+        <scene sceneID="L0V-fk-mPL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TrainingPlanner" id="dAK-Hw-otM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="bqc-Uc-4bE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W8Q-PG-Lsk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-479" y="-302"/>
+        </scene>
+        <!--Gym Tab Bar View Controller-->
+        <scene sceneID="SBz-Pn-Cr6">
+            <objects>
+                <tabBarController storyboardIdentifier="GymTabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OFq-nb-NsE" customClass="GymTabBarViewController" customModule="GymApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fAF-3t-MQA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dAK-Hw-otM" kind="relationship" relationship="viewControllers" id="Wb6-po-l12"/>
+                        <segue destination="kUG-pm-S39" kind="relationship" relationship="viewControllers" id="DSJ-3w-otX"/>
+                        <segue destination="gDW-Mw-vqR" kind="relationship" relationship="viewControllers" id="iyF-yV-O4q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1fp-hk-TbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1480" y="-195"/>
+        </scene>
+    </scenes>
+</document>
