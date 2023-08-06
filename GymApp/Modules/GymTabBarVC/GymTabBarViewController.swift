@@ -32,10 +32,8 @@ class GymTabBarViewController: UITabBarController, StoryboardInitializable {
   }
   
   override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-//    super.tabBar(tabBar, didSelect: item)
     
     let selectedItemTitle = item.title
-//    AppCoordinator.shared.currentNavigator?.navigationItem.title = selectedItemTitle
     AppCoordinator.shared.sideMenu?.navTitle.title = selectedItemTitle
   }
 }

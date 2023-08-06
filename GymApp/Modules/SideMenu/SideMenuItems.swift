@@ -8,13 +8,13 @@
 import UIKit
 
 enum SideMenuItems: CaseIterable {
-  case tabBar
+  case gymTabBar
   case history
   case settings
   
   var title: String {
     switch self {
-    case .tabBar:
+    case .gymTabBar:
       return "tabBar"
     case .history:
       return "history"
@@ -24,7 +24,7 @@ enum SideMenuItems: CaseIterable {
   }
   var viewController: UIViewController {
     switch self {
-    case .tabBar:
+    case .gymTabBar:
       return GymTabBarViewController.createFromStoryboard()
     case .history:
       return UIViewController()
@@ -34,7 +34,7 @@ enum SideMenuItems: CaseIterable {
   }
   var menuIcon: UIImage? {
     switch self {
-    case .tabBar:
+    case .gymTabBar:
       return nil
     case .history:
       return nil

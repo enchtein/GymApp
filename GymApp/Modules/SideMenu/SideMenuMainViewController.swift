@@ -49,7 +49,7 @@ class SideMenuMainViewController: UIViewController, StoryboardInitializable {
   
   private func defaultVC() {
     let availiableCases = SideMenuItems.allCases
-    let defaultVC = availiableCases.first(where: {$0 == .tabBar}) ?? availiableCases.first
+    let defaultVC = availiableCases.first(where: {$0 == .gymTabBar}) ?? availiableCases.first
     
     self.activeController = defaultVC?.viewController
     self.navTitle.title = defaultVC?.title
